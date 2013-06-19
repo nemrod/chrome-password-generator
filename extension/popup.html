@@ -1,0 +1,44 @@
+<html>
+<head>
+<link id='stylesheet' type='text/css' rel='stylesheet' href='style_dark.css'>
+<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+<div id='pwgen'>
+	<h1>Password Generator</h1>
+	<table>
+		<tr><th>Length</th><td><select id='length'>
+			<option value='5'>5</option>
+			<option value='6'>6</option>
+			<option value='7'>7</option>
+			<option value='8' selected='selected'>8</option>
+			<option value='9'>9</option>
+			<option value='10'>10</option>
+			<option value='11'>11</option>
+			<option value='12'>12</option>
+			<option value='13'>13</option>
+			<option value='14'>14</option>
+			<option value='15'>15</option>
+			<option value='16'>16</option>
+			<option value='17'>17</option>
+			<option value='18'>18</option>
+			<option value='19'>19</option>
+			<option value='20'>20</option>
+		</select></td></tr>
+		<tr><th>How many</th><td><select id='amount'>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3' selected='selected'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+		</select></td></tr>
+		<tr><th>Uppercase</th><td><input type='checkbox' id='upper' value='1' checked='checked'></td></tr>
+		<tr><th>Lowercase</th><td><input type='checkbox' id='lower' value='1' checked='checked'></td></tr>
+		<tr><th>Numbers</th><td><input type='checkbox' id='numbers' value='1' checked='checked'></td></tr>
+		<tr><th>Special</th><td><input type='checkbox' id='special' value='1' checked='checked'></td></tr>
+        <tr><td colspan='2' class='submit'><button id='generate'>Generate</button></td></tr>
+	</table>
+	<textarea rows='6' cols='20' id='passwords'></textarea>
+</div>
+</body>
+</html>
